@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Purple+Purse&display=swap');
+
+html {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.container{
+    width: 320px;
+}
+
+.navBar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Purple Purse';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 47px;
+    margin-bottom: 53px;
+}
+
+.logo-comfort{ 
+    color: #FFD976;
+}
+
+.logo-taxi{ 
+    font-size: 30px;
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+    cursor: pointer;
+    padding-left: 26px;
+    position: relative;
+    min-height: 32px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;    
+    color: #8DA1B5;
+    margin-left: 10%;
+    word-break: break-all;
+}
