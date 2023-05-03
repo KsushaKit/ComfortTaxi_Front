@@ -1,0 +1,30 @@
+.clients-data__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-data__cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.data_wrapper {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    width: 130px;
+    overflow: hidden; /* скрыть содержимое, выходящее за пределы блока */
+    white-space: nowrap; /* запрет переноса слов */
+    text-overflow: ellipsis; /* добавление многоточия в конце неразмещенного текста */
+}
+
+.data_wrapper span{
+   /* чтобы работало text-overflow, нужно чтобы span был блочным */
+}
+
+
+.clients-data__container {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+

@@ -1,0 +1,14 @@
+.buttonBack button {
+    background: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 41px;
+    border: 0;
+    cursor: pointer;
+}
+
+.buttonBack a {
+    text-decoration: none;
+}

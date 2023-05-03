@@ -1,0 +1,33 @@
+.profile {
+    padding: 50px;
+    display: flex;
+}
+
+.profile__title {
+    margin-bottom: 40px;
+}
+
+.profile__img {
+    height: 400px;
+    width: 450px;
+}
+
+.profile__right-container {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.profile__titles,
+.profile__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__button {
+    height: 400px;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+

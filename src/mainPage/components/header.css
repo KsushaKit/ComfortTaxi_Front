@@ -1,0 +1,16 @@
+.header{
+    height: 173px;
+    display: flex;
+    
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #605656;
+}
+
+.breadcrumbs a+a:before {
+    padding: 8px;
+    color: #605656;
+    content:">";
+}

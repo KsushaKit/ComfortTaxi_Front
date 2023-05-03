@@ -25,8 +25,9 @@ body {
     font-family: 'Inter';
 }
 
-.container{
+.container-navbar{
     width: 320px;
+    background: #FFFFFF;
 }
 
 .navBar{
@@ -46,7 +47,7 @@ body {
     font-size: 36px;
     line-height: 45px;
     margin-top: 47px;
-    margin-bottom: 53px;
+    margin-bottom: 38px;
 }
 
 .logo-comfort{ 

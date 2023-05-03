@@ -1,0 +1,64 @@
+
+.auth{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+}
+
+.logo-auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Purple Purse';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 83px;
+    line-height: 100px;
+    margin-top: 47px;
+    margin-bottom: 38px;
+}
+
+.logo-comfort-auth{ 
+    color: #FFD976;
+}
+
+.logo-taxi-auth{ 
+    font-size: 56px;
+}
+
+.auth-button{
+    width: 640px;
+    display: flex;
+    justify-content: center;
+}
+
+.auth button{
+    padding: 9px 85px 9px 85px;
+    background: #FFD976;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.auth-field{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    margin-bottom: 28px;
+}
+
+.auth-field span{
+    margin-bottom: 20px;
+}
+
+.auth input{
+    width: 640px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}

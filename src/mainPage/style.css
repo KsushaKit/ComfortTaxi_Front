@@ -1,3 +1,18 @@
 .container{
     display: flex;
+    height: 840px;
+}
+
+.main{
+    width: 1600px;
+    background-color: #E4E5EA;
+}
+
+.outlet{
+    width: 1300px;
+    height: 570px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: auto;
+    overflow: auto; /* для прокрутки списка клиентов*/
 }

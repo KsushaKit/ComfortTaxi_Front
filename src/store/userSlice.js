@@ -1,23 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const USER = 'user';
+
 const userSlice = createSlice({
-    name: 'items',
+    name: 'user',
     initialState: {
-        items: []
+        token: localStorage.getItem(USER) ?? null
     },
     reducers: {
-        //набор методов
-        add( state, action) {
+
+        setUser( state, action) {
             console.log(state);
             console.log(action);
-
-            state.items.push({
-                id: new Date().toDateString(),
-                text: 'ndnfn'
-            })
+            state.token = action.payload.token;
+            //без localstorage после обновления страницы сбрасывается initialState и токен снова null
+            localStorage.setItem( USER, action.payload.token )
+        },
+        removeUser(state) {
+            state.token = null;
         }
     }
 })
 
-export const {add} = userSlice.actions;
+export const {setUser, removeUser} = userSlice.actions;
 export default userSlice.reducer;

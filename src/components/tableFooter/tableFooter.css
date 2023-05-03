@@ -1,0 +1,14 @@
+.tableFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-btn {
+    border: 2px solid #FFD976;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: inherit;
+    margin: 5px;
+}

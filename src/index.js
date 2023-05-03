@@ -7,26 +7,27 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import { Provider } from 'react-redux';
-import store from './store';
+import store from './store/index';
+import Main from './main/Main';
+import Clients from './clients/Clients';
+import ClientsAdd from './clients/clientsAdd/ClientsAdd';
+import ClientsEdit from './clients/clientsEdit/ClientsEdit';
+import App from './App';
+import ClientProfile from './clients/clientProfile/ClientProfile';
 
-import MainPage from './mainPage/MainPage';
-import Authentication from './authentication/Authentication'
-import Main from './mainPage/navBarItems/main/Main';
-import Clients from './mainPage/navBarItems/clients/Clients';
-
-//useSelector достать значение
-//useDispatch выполнить действие
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage />}>
+          <Route path="/" element={ <App />}>
             <Route index element={<Main />}/>
             <Route path="/clients" element={<Clients />}/>
+            <Route path="/clientsAdd" element={<ClientsAdd />}/>
+            <Route path="/clientsEdit" element={<ClientsEdit />}/>
+            <Route path="/clientsProfile" element={<ClientProfile />}/>
           </Route>
-          <Route path="/authentication" element={<Authentication />} />
           <Route path="*" element={<p>Path not resolved</p>} />
         </Routes>
     </BrowserRouter>

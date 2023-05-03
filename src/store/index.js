@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import clientSlice from "./clientSlice";
+import defaultSlice from "./defaultSlice";
 import userSlice from "./userSlice";
 
 export default configureStore({
     reducer: {
-        client: clientSlice,
-        user: userSlice
+        user: userSlice,
+        default: defaultSlice
     }
 });
