@@ -7,12 +7,17 @@ import { useNavigate } from "react-router-dom";
 
 const ClientsAdd = () => {
 
+  //Важный элемент для правильного выстраивания api-запросов
+  //---------------------------------------------------------------------------------
+  let identity = 'clients';
+  //---------------------------------------------------------------------------------
+
   //названия полей ввода
   let titlesInputs = ['Имя', 'Фамилия', 'Отчество', 'Телефон', 'Почта', 'Адрес'];
   //типы полей ввода
   let typesInputs = ['text', 'text', 'text', 'text', 'text', 'text'];
   //путь возврвщения для кнопки "назад"
-  let path = 'clients';
+  let path = identity;
 
   //составляющая формы
   const [form, setForm] = React.useState({
@@ -30,7 +35,7 @@ const ClientsAdd = () => {
   async function transferData(data) {
     console.log('transferData');
     //добавление клиента в бд
-    await addItem( token, 'clients', data);
+    await addItem( token, identity, data);
   }
 
   //client поздно обновляется

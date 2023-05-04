@@ -1,5 +1,5 @@
 import React ,{ useEffect, useState } from 'react';
-import './clients.css'
+import './users.css'
 import {getItems, searchItem} from '../api/axios';
 import { useSelector } from 'react-redux';
 
@@ -15,13 +15,13 @@ import Delete from '../components/delete/Delete';
 import TableFooter from '../components/tableFooter/TableFooter';
 
 
-const Clients = () => {
+const Users = () => {
 
     //Важный элемент для правильного выстраивания api-запросов
     //---------------------------------------------------------------------------------
-    let identity = 'clients';
+    let identity = 'users';
     //---------------------------------------------------------------------------------
-
+    
     let cards = [];
     //количество карточек, отображаемых на странице
     const chunkSize = 4;
@@ -128,4 +128,4 @@ const Clients = () => {
     );
 };
 
-export default Clients;
+export default Users;

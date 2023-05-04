@@ -16,7 +16,7 @@ const Card = ({ item, element }) => {
                 <div className='clients-data__cards'>
                     {arr.map((item) => (
                        <div className='data_wrapper'>
-                            <span key={item.id}>
+                            <span >
                                 {item}
                             </span>
                         </div>

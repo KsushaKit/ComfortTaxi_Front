@@ -3,6 +3,11 @@ import Profile from '../../components/profile/Profile';
 import { useSelector } from 'react-redux';
 
 const ClientProfile = () => {
+    //Важный элемент для правильного выстраивания api-запросов
+    //---------------------------------------------------------------------------------
+    let identity = 'clients';
+    //---------------------------------------------------------------------------------
+
     let searchItem = useSelector(state => state.default.searchItem); 
     console.log(` client client profile ${JSON.stringify(searchItem)}`);
     let title = `Профиль клиента №${searchItem.id}`;
@@ -10,7 +15,7 @@ const ClientProfile = () => {
     
     return (
         <div>
-            <Profile identity={'clients'} title = {title} titles = {titles} data = {searchItem} />
+            <Profile identity={identity} title = {title} titles = {titles} data = {searchItem} />
         </div>
     );
 };
